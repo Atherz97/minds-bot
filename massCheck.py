@@ -1,6 +1,6 @@
 #
 # python3 massCheck.py testmode
-#
+# scroll down to line 64 to add your profile info - this subscribes to accounts using network effect
 from minds import Minds, Profile
 import sys
 import json
@@ -61,7 +61,7 @@ __STACK = 0
 # log in
 while 1 == 1:
 	try:
-		minds_api = Minds(Profile("antwandhoward","@@Ua9h5t9t"))
+		minds_api = Minds(Profile("YOUR_USER","YOUR_PASS"))
 	except:
 		continue
 	break
@@ -225,11 +225,11 @@ def act_on(target):
 #
 # accept input from USER on new accounts to track
 #
-ok = 0
+ok = 1
 while 1 == 1:
 	time.sleep(1)
 	if ok == 0:
-		username = "antwandhoward"
+		username = ""
 		ok = 1
 	else:
 		username = input("add username to lead queue: ")
