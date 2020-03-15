@@ -3,7 +3,7 @@ import sys
 
 minds_api = Minds(Profile("dConnect312","dC12-4"))
 
-print(minds_api.get_channel("antwandhoward"))
+print(minds_api.get_channel("SOME_PROFILE"))
 
 posts = minds_api.newsfeed_featured()
 lead_list = []
